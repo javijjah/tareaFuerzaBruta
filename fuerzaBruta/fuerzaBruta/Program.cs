@@ -17,13 +17,14 @@ public class TareaFuerzaBruta
 
 
         //Zona de la contraseña de la que tenemos el hash, convirtiéndola y obteniendo su valor
-        byte[] pass = GetHash("asldioasdp");
+        byte[] pass = GetHash("33eric33");
         string passString = devolverHash(pass);
         //Zona de acceso y lectura del fichero
         List<String> passList = new List<string>();
-        string path = "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\passwordsmentira1.txt";
+        string path = "2151220-passwords.txt";
+        //zona de invocación de los métodos que realizan las tareas
         rellenarLista(passList, path);
-        crackearPassword(passList,passString);
+        crackearPassword(passList, passString);
     }
 
     public static byte[] GetHash(string password)
@@ -43,7 +44,7 @@ public class TareaFuerzaBruta
         return resultado;
     }
 
-    public static void crackearPassword(List<String> passList,string passString)
+    public static void crackearPassword(List<String> passList, string passString)
     {
         foreach (var passtemp in passList)
         {
@@ -54,7 +55,7 @@ public class TareaFuerzaBruta
         }
     }
 
-    public static void rellenarLista(List<String> passList,string pathFichero)
+    public static void rellenarLista(List<String> passList, string pathFichero)
     {
         using (StreamReader sr =
                File.OpenText(pathFichero))
