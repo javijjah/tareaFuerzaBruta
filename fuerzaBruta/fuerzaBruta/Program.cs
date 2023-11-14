@@ -9,13 +9,6 @@ public class TareaFuerzaBruta
 {
     public static void Main()
     {
-        //el da un archivo con contraseñas
-        //el programa debe:
-        //1.leer el archivo
-        //2. ponemos todas las contraseñas en una lista
-        //él recomienda probarlo con 20-30 y luego ya hacerlo con las 3 millones de contraseñas
-
-
         //Zona de la contraseña de la que tenemos el hash, convirtiéndola y obteniendo su valor
         byte[] pass = GetHash("33eric33");
         string passString = devolverHash(pass);
@@ -26,13 +19,13 @@ public class TareaFuerzaBruta
         rellenarLista(passList, path);
         crackearPassword(passList, passString);
     }
-
+        //Esto devuelve el hash en bytes
     public static byte[] GetHash(string password)
     {
         using (HashAlgorithm algoritmo = SHA256.Create())
             return algoritmo.ComputeHash(Encoding.UTF8.GetBytes(password));
     }
-
+        //Esto convierte el hash en un String exadecimal que podemos leer
     public static string devolverHash(byte[] passHash)
     {
         string resultado = "";
@@ -40,10 +33,9 @@ public class TareaFuerzaBruta
         {
             resultado += $"{b:X2}";
         }
-
         return resultado;
     }
-
+    //Esto revisa cada string de la lista de contraseñas para buscar la coincidencia
     public static void crackearPassword(List<String> passList, string passString)
     {
         foreach (var passtemp in passList)
@@ -54,7 +46,7 @@ public class TareaFuerzaBruta
             }
         }
     }
-
+    //Esto rellena la lista de ocntraseñas con las del documento
     public static void rellenarLista(List<String> passList, string pathFichero)
     {
         using (StreamReader sr =
