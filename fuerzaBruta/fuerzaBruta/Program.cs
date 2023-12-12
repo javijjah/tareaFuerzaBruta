@@ -10,14 +10,14 @@ public class TareaFuerzaBruta
     public static void Main()
     {
         //Zona de la contraseña de la que tenemos el hash, convirtiéndola y obteniendo su valor
-        byte[] pass = GetHash("33eric33");
+        byte[] pass = GetHash("! love you");
         string passString = devolverHash(pass);
         //Zona de acceso y lectura del fichero
         List<String> passList = new List<string>();
         string path = "2151220-passwords.txt";
         //zona de invocación de los métodos que realizan las tareas
         rellenarLista(passList, path);
-        crackearPassword(passList, passString);
+        crackearPassword(passList, pass);
     }
         //Esto devuelve el hash en bytes
     public static byte[] GetHash(string password)
@@ -36,11 +36,11 @@ public class TareaFuerzaBruta
         return resultado;
     }
     //Esto revisa cada string de la lista de contraseñas para buscar la coincidencia
-    public static void crackearPassword(List<String> passList, string passString)
+    public static void crackearPassword(List<String> passList, byte[] pass)
     {
         foreach (var passtemp in passList)
         {
-            if ((devolverHash(GetHash(passtemp))).Equals(passString))
+            if ((GetHash(passtemp)).SequenceEqual(pass))
             {
                 Console.WriteLine("Contraseña encontrada: " + passtemp);
             }

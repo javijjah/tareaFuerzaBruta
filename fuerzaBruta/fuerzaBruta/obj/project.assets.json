@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\práctica c#\\helloWorld\\FuerzaBruta\\tareaFuerzaBruta\\fuerzaBruta\\fuerzaBruta\\fuerzaBruta.csproj",
+      "projectUniqueName": "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\c#\\FuerzaBruta\\tareaFuerzaBruta\\fuerzaBruta\\fuerzaBruta\\fuerzaBruta.csproj",
       "projectName": "fuerzaBruta",
-      "projectPath": "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\práctica c#\\helloWorld\\FuerzaBruta\\tareaFuerzaBruta\\fuerzaBruta\\fuerzaBruta\\fuerzaBruta.csproj",
+      "projectPath": "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\c#\\FuerzaBruta\\tareaFuerzaBruta\\fuerzaBruta\\fuerzaBruta\\fuerzaBruta.csproj",
       "packagesPath": "C:\\Users\\javil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\práctica c#\\helloWorld\\FuerzaBruta\\tareaFuerzaBruta\\fuerzaBruta\\fuerzaBruta\\obj\\",
+      "outputPath": "C:\\Users\\javil\\Desktop\\2DAM\\gigante de jagger\\c#\\FuerzaBruta\\tareaFuerzaBruta\\fuerzaBruta\\fuerzaBruta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\javil\\AppData\\Roaming\\NuGet\\NuGet.Config",
